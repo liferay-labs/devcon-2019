@@ -1,0 +1,5 @@
+Bundle-Name: Liferay Players Collection Contributor
+Bundle-SymbolicName: com.liferay.devcon.player.collection.contributor
+Bundle-Version: 1.0.0
+Web-ContextPath: /players-collection-contributor
+-dsannotations-options: inherit
