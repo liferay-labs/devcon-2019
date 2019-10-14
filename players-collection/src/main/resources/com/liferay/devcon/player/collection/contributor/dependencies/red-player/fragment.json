@@ -1,0 +1,8 @@
+{
+	"fragmentEntryKey": "red-player",
+	"name": "Red Player",
+	"type": "component",
+	"cssPath": "index.css",
+	"htmlPath": "index.html",
+	"jsPath": "index.js"
+}

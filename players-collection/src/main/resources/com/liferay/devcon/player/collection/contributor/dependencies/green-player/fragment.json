@@ -1,0 +1,8 @@
+{
+	"fragmentEntryKey": "green-player",
+	"name": "Green Player",
+	"type": "component",
+	"cssPath": "index.css",
+	"htmlPath": "index.html",
+	"jsPath": "index.js"
+}
