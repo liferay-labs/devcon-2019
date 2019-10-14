@@ -2,6 +2,7 @@
 	"fragmentEntryKey": "red-player",
 	"name": "Red Player",
 	"type": "component",
+	"thumbnail": "red.png",
 	"cssPath": "index.css",
 	"htmlPath": "index.html",
 	"jsPath": "index.js"
