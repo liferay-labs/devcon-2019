@@ -7,7 +7,7 @@
 	
 	<div class="card-body">
 		<h2>Player Information</h2>
-		Supported languages:
+		<b>Supported languages:</b>
 
 		[#assign availableLanguageIds = languageUtil.getAvailableLocales()/]
 
@@ -16,5 +16,13 @@
 		  
 		  [#if availableLanguageId?has_next],[/#if]
 		[/#list]
+
+		<div class="mt-4">
+			<b>Current location:</b>
+			
+			[@liferay_map["map-display"] 
+				geolocation=true 
+			/]
+		</div>
 	</div>
 </div>
