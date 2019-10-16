@@ -18,11 +18,15 @@
 		  [#if availableLanguageId?has_next],[/#if]
 		[/#list]
 
-		<div class="mt-4">
+		<div class="mt-3">
 			<b>Current location:</b>
+			[#assign randomLatitude = random.nextInt(181) - 90 /]
+			[#assign randomLongitude = random.nextInt(361) - 180 /]
 			
 			[@liferay_map["map-display"] 
-				geolocation=true 
+			  geolocation=true 
+			  latitude=randomLatitude
+			  longitude=randomLongitude
 			/]
 		</div>
 	</div>
