@@ -1,4 +1,4 @@
-<div class="card py-6 py-md-8 text-white text-break">
+<div class="player-card card py-6 py-md-8 text-white text-break">
 	<div class="card-header">
 		Player Name
 	</div>
@@ -6,6 +6,15 @@
 	<img alt="Player Image" class="player" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAJCAYAAAA7KqwyAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAkSURBVHgB7cxBEQAACAIwtH8Pzw52kxD8OBZgNXsPQUOUwCIgAz0DHTyygaAAAAAASUVORK5CYII=" />
 	
 	<div class="card-body">
-		Player Information
+		<h2>Player Information</h2>
+		Supported languages:
+
+		[#assign availableLanguageIds = languageUtil.getAvailableLocales()/]
+
+		[#list availableLanguageIds as availableLanguageId]
+		  ${localeUtil.fromLanguageId(availableLanguageId).getDisplayName(locale)}
+		  
+		  [#if availableLanguageId?has_next],[/#if]
+		[/#list]
 	</div>
 </div>
