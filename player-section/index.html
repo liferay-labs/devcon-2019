@@ -29,5 +29,11 @@
 			  longitude=randomLongitude
 			/]
 		</div>
-	</div>
+		<div class="mt-3">
+			<b>Equipment:</b>
+			[#list equipment as equipmentItem]
+				${equipmentRendererUtil.render(equipmentItem, themeDisplay.getRequest(), themeDisplay.getResponse())}
+				<br>
+			[/#list]
+		</div>
 </div>
