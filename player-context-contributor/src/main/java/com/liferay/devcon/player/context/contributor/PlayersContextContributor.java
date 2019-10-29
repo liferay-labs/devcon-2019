@@ -16,10 +16,13 @@ package com.liferay.devcon.player.context.contributor;
 
 import com.liferay.portal.kernel.template.TemplateContextContributor;
 
+import com.liferay.info.list.provider.InfoListProvider;
+import com.liferay.info.list.provider.InfoListProviderTracker;
 import com.liferay.devcon.player.equipment.entity.Ball;
 import com.liferay.devcon.player.equipment.entity.Equipment;
 import com.liferay.devcon.player.equipment.entity.Uniform;
-import com.liferay.devcon.player.equipment.renderer.EquipmentRendererUtil;
+import com.liferay.devcon.player.equipment.list.provider.EquipmentInfoListProvider;
+import com.liferay.devcon.player.equipment.list.renderer.EquipmentInfoListRendererUtil;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -48,17 +51,21 @@ public class PlayersContextContributor implements TemplateContextContributor 	{
 
 		contextObjects.put("random", new Random());
 
-		List<Equipment> equipment = new ArrayList<>();
+		InfoListProvider<Equipment> infoListProvider = 
+			_infoListProviderTracker.getInfoListProvider(
+				EquipmentInfoListProvider.class.getName());
 
-		equipment.add(new Ball());
-		equipment.add(new Uniform());
+		List<Equipment> equipment = infoListProvider.getInfoList(null);
 
 		contextObjects.put("equipment", equipment);
 		contextObjects.put(
-			"equipmentRendererUtil", _equipmentRendererUtil);
+			"equipmentInfoListRendererUtil", _equipmentInfoListRendererUtil);
 	}
 
 	@Reference
-	private EquipmentRendererUtil _equipmentRendererUtil;
+	private EquipmentInfoListRendererUtil _equipmentInfoListRendererUtil;
+
+	@Reference
+	private InfoListProviderTracker _infoListProviderTracker;
 
 }
