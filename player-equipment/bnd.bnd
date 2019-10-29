@@ -3,6 +3,8 @@ Bundle-SymbolicName: com.liferay.devcon.player.equipment
 Bundle-Version: 1.0.0
 Export-Package: \
     com.liferay.devcon.player.equipment.entity,\
-    com.liferay.devcon.player.equipment.renderer
+    com.liferay.devcon.player.equipment.renderer,\
+    com.liferay.devcon.player.equipment.list.provider,\
+    com.liferay.devcon.player.equipment.list.renderer
 Web-ContextPath: /players-equipment
 -dsannotations-options: inherit
