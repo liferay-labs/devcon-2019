@@ -1,0 +1,5 @@
+Bundle-Name: Liferay DevCon Player Display Contributor
+Bundle-SymbolicName: com.liferay.devcon.player.display.contributor
+Bundle-Version: 1.0.0
+Web-ContextPath: /player-display-contributor
+-dsannotations-options: inherit
