@@ -31,9 +31,6 @@
 		</div>
 		<div class="mt-3">
 			<b>Equipment:</b>
-			[#list equipment as equipmentItem]
-				${equipmentRendererUtil.render(equipmentItem, themeDisplay.getRequest(), themeDisplay.getResponse())}
-				<br>
-			[/#list]
+			${equipmentInfoListRendererUtil.render(equipment, themeDisplay.getRequest(), themeDisplay.getResponse())}
 		</div>
 </div>
