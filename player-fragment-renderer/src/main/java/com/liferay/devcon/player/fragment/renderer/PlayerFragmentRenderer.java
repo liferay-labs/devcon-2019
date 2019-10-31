@@ -14,12 +14,14 @@
 
 package com.liferay.devcon.player.collection.contributor;
 
+import com.liferay.frontend.taglib.servlet.taglib.util.JSPRenderer;
 import com.liferay.fragment.renderer.FragmentRenderer;
 import com.liferay.fragment.renderer.FragmentRendererContext;
 
 import java.io.IOException;	
 import java.util.Locale;
 
+import javax.servlet.ServletContext;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
@@ -48,6 +50,18 @@ public class PlayerFragmentRenderer implements FragmentRenderer {
 		HttpServletRequest httpServletRequest,
 		HttpServletResponse httpServletResponse)
 	throws IOException {
+
+		_jspRenderer.renderJSP(
+			_servletContext, httpServletRequest, 
+			httpServletResponse, "/player.jsp");
 	}
+
+	@Reference
+	private JSPRenderer _jspRenderer;
+
+	@Reference(
+		target = "(osgi.web.symbolicname=com.liferay.devcon.player.fragment.renderer)"
+	)
+	private ServletContext _servletContext;
 
 }

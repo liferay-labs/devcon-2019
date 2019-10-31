@@ -7,6 +7,8 @@ liferay {
 dependencies {
 	compileOnly group: "com.liferay", name: "com.liferay.fragment.api", version: "4.0.2"
 	compileOnly group: "com.liferay.portal", name: "com.liferay.portal.kernel", version: "4.35.3"
+	compileOnly group: "com.liferay", name: "com.liferay.frontend.taglib", version: "4.0.33"
 	compileOnly group: "javax.servlet", name: "javax.servlet-api", version: "3.0.1"
+	compileOnly group: "javax.servlet.jsp", name: "javax.servlet.jsp-api", version: "2.3.1"
 	compileOnly group: "org.osgi", name: "org.osgi.service.component.annotations", version: "1.3.0"
 }
