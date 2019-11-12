@@ -1,0 +1,46 @@
+[#assign
+playerPositionClasses = {
+"Player Position": "secondary",
+"Goalkeeper": "warning",
+"Defender": "primary",
+"Midfielder": "success",
+"Striker": "danger"
+}]
+
+<div class="card card-type-asset">
+  <div class="aspect-ratio card-item-first">
+    <div class="aspect-ratio-item-center-middle card-type-asset-icon player-image-container">
+      <span class="sticker sticker-user-icon">
+        <span class="sticker-overlay">
+          <lfr-editable id="player-image-editable" type="image">
+            <img alt="" class="player-image" />
+          </lfr-editable>
+        </span>
+      </span>
+    </div>
+  </div>
+  <div class="card-body">
+    <div class="card-row">
+      <div class="autofit-col-expand">
+        <h1 class="player-name text-center" title="Player Name">
+          <lfr-editable id="player-name" type="text">Player name</lfr-editable>
+        </h1>
+        <div class="text-center">
+          <span class="sticker team-logo-container">
+            <lfr-editable id="team-logo-editable" type="image">
+              <img alt="" class="team-logo" />
+            </lfr-editable>
+          </span>
+        </div>
+        <h3 class="team-name text-center" title="Team Name">
+          <lfr-editable id="team-name" type="text">Team name</lfr-editable>
+        </h3>
+        <div class="text-center">
+          <span class="label label-${playerPositionClasses[configuration.playerPosition]} player-position">
+            ${configuration.playerPosition}
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,25 @@
+{
+	"fieldSets": [
+	  {
+	    "fields": [
+	      {
+          "name": "playerPosition",
+          "label": "Player Position",
+          "description": "player-position",
+          "type": "select",
+          "dataType": "string",
+          "typeOptions": {
+            "validValues": [
+              {"value": "Player Position", "label": "-"},
+              {"value": "Goalkeeper"},
+              {"value": "Defender"},
+              {"value": "Midfielder"},
+              {"value": "Striker"}
+            ]
+          },
+          "defaultValue": "Player Position"
+        }
+	     ]
+	  }
+	]
+}

@@ -1,0 +1,8 @@
+{
+  "name": "Player",
+  "cssPath": "styles.css",
+  "htmlPath": "index.html",
+  "jsPath": "main.js",
+  "configurationPath": "configuration.json",
+  "type": 1
+}
