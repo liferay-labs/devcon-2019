@@ -10,14 +10,14 @@
           "dataType": "string",
           "typeOptions": {
             "validValues": [
-              {"value": "Player Position", "label": "-"},
-              {"value": "Goalkeeper"},
-              {"value": "Defender"},
-              {"value": "Midfielder"},
-              {"value": "Striker"}
+              {"value": "player-position", "label": "-"},
+              {"value": "goalkeeper", "label": "Goalkeeper"},
+              {"value": "defender", "label": "Defender"},
+              {"value": "midfielder", "label": "Midfielder"},
+              {"value": "striker", "label": "Striker"}
             ]
           },
-          "defaultValue": "Player Position"
+          "defaultValue": "player-position"
         }
 	     ]
 	  }
