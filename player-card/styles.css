@@ -14,35 +14,17 @@
 }
 
 .player-position {
+  border-color: #00acc1;
+  color: #00acc1;
   font-size: 11px;
   margin-left: 0.25rem;
 }
 
-.player-position-defender {
-  border-color: #f4511e;
-  color: #f4511e;
-}
-
-.player-position-goalkeeper {
-  border-color: #ffc107;
-  color: #ffc107;
-}
-
-.player-position-midfielder {
-  border-color: #43a047;
-  color: #43a047;
-}
-
-.player-position-striker {
-  border-color: #00acc1;
-  color: #00acc1;
-}
-
 .team-logo-container.sticker {
-  width: 40px;
   height: 40px;
   line-height: 40px;
   margin-bottom: 0.5rem;
+  width: 40px;
 }
 
 .team-logo-container lfr-editable {
@@ -51,8 +33,4 @@
 
 .team-logo {
   width: 100%;
-}
-
-.team-name {
-  font-weight: 300;
 }
