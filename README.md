@@ -23,3 +23,45 @@ https://nodejs.org/en/download/package-manager/
 ## Common build files
 
 https://github.com/liferay-labs/devcon-2019/raw/master/common-build-files.zip
+
+## Branches per topic
+
+#### Introduction
+
+https://github.com/liferay-labs/devcon-2019/tree/01-introduction
+
+#### Fragment Collection contributors
+
+https://github.com/liferay-labs/devcon-2019/tree/02-contributed-collections
+
+#### Fragment Collection resources 
+
+https://github.com/liferay-labs/devcon-2019/tree/03-resources
+
+#### Fragment Configuration
+
+https://github.com/liferay-labs/devcon-2019/tree/04-fragment-configuration
+
+#### FreeMarker support in Fragments
+
+https://github.com/liferay-labs/devcon-2019/tree/05-freemarker-support
+
+#### Mapping concept
+
+https://github.com/liferay-labs/devcon-2019/tree/07-mapping
+
+#### Info Framework basics
+
+https://github.com/liferay-labs/devcon-2019/tree/08-info-framework
+
+#### Info & Asset list providers
+
+https://github.com/liferay-labs/devcon-2019/tree/09-list-providers
+
+#### Fragment Entry Processor concept
+
+https://github.com/liferay-labs/devcon-2019/tree/10-fragment-entry-processor
+
+#### Programatic Fragment renderer
+
+https://github.com/liferay-labs/devcon-2019/tree/11-fragment-renderer
