@@ -1,0 +1,93 @@
+<div class="card">
+
+  <div class="card-body">
+    <div class="mb-3">
+      <span class="font-weight-light">Technique</span>
+      <div class="progress-group">
+        <div class="progress">
+          <div class="progress-bar progress-bar-striped skill-level-${configuration.technique}"
+            style="width: ${configuration.technique?number * 20}%;">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mb-3">
+      <span class="font-weight-light">Strength</span>
+      <div class="progress-group">
+        <div class="progress">
+          <div class="progress-bar progress-bar-striped skill-level-${configuration.strength}"
+            style="width: ${configuration.strength?number * 20}%;">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mb-3">
+      <span class="font-weight-light">Dribbling</span>
+      <div class="progress-group">
+        <div class="progress">
+          <div class="progress-bar progress-bar-striped skill-level-${configuration.dribbling}"
+            style="width: ${configuration.dribbling?number * 20}%;">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mb-4">
+      <span class="font-weight-light">Speed</span>
+      <div class="progress-group ">
+        <div class="progress">
+          <div class="progress-bar progress-bar-striped skill-level-${configuration.speed}"
+            style="width: ${configuration.speed?number * 20}%;">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr>
+    
+    <div class="row">
+      <div class="col col-3 text-center">
+        <span class="font-weight-light">Status</span><br>
+        [#if configuration.injured]
+          <span class="player-info-icon font-weight-light injured">
+            [@clay.icon symbol="plus" /]
+          </span>
+          <span class="player-info-text font-weight-light injured">
+            Injured
+          </span>
+        [#else]
+          <span class="player-info-icon font-weight-light healthy">
+            [@clay.icon symbol="heart" /]
+          </span>
+          <span class="player-info-text font-weight-light healthy">
+            Healthy
+          </span>
+        [/#if]
+      </div>
+
+      <div class="col col-3 text-center">
+        <span class="font-weight-light">Games played</span><br>
+        <span class="player-info-number font-weight-light">
+          ${configuration.gamesPlayed}
+        </span>
+      </div>
+
+      <div class="col col-3 text-center">
+        <span class="font-weight-light">Goals</span><br>
+        <span class="player-info-number font-weight-light">
+          ${configuration.goals}
+        </span>
+      </div>
+
+      <div class="col col-3 text-center">
+        <span class="font-weight-light">Assists</span><br>
+        <span class="player-info-number font-weight-light">
+          ${configuration.assists}
+        </span>
+      </div>
+    </div>
+
+  </div>
+</div>
