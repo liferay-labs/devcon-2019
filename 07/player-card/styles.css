@@ -1,0 +1,36 @@
+.player-image-container.card-type-asset-icon {
+  max-width: 40%;
+  width: 40%;
+}
+
+.player-image-container lfr-editable {
+  height: 100%;
+  width: 100%;
+}
+
+.player-image {
+  height: 100%;
+  width: 100%;
+}
+
+.player-position {
+  border-color: #00acc1;
+  color: #00acc1;
+  font-size: 11px;
+  margin-left: 0.25rem;
+}
+
+.team-logo-container.sticker {
+  height: 40px;
+  line-height: 40px;
+  margin-bottom: 0.5rem;
+  width: 40px;
+}
+
+.team-logo-container lfr-editable {
+  width: 40px;
+}
+
+.team-logo {
+  width: 100%;
+}

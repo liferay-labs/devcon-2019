@@ -1,0 +1,5 @@
+Bundle-Name: Liferay Player Fragment Renderer
+Bundle-SymbolicName: com.liferay.devcon.player.fragment.renderer
+Bundle-Version: 1.0.0
+Web-ContextPath: /player-fragment-renderer
+-dsannotations-options: inherit

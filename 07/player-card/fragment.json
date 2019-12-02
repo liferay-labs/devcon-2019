@@ -1,0 +1,8 @@
+{
+  "type": 1,
+  "name": "Player Card",
+  "cssPath": "styles.css",
+  "htmlPath": "index.html",
+  "jsPath": "main.js",
+  "configurationPath": "configuration.json"
+}

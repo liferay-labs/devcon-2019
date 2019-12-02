@@ -1,0 +1,9 @@
+{
+	"fragmentEntryKey": "blue-player",
+	"name": "Blue Player",
+	"type": "component",
+	"thumbnail": "blue.png",
+	"cssPath": "index.css",
+	"htmlPath": "index.html",
+	"jsPath": "index.js"
+}
