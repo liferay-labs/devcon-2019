@@ -1,8 +1,0 @@
-{
-	"fragmentEntryKey": "equipped-player",
-	"name": "Equipped Player",
-	"type": "component",
-	"cssPath": "index.css",
-	"htmlPath": "index.html",
-	"jsPath": "index.js"
-}

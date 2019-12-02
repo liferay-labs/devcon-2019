@@ -1,8 +1,0 @@
-Bundle-Name: Liferay Player Equipment
-Bundle-SymbolicName: com.liferay.devcon.player.equipment
-Bundle-Version: 1.0.0
-Export-Package: \
-    com.liferay.devcon.player.equipment.entity,\
-    com.liferay.devcon.player.equipment.renderer
-Web-ContextPath: /players-equipment
--dsannotations-options: inherit

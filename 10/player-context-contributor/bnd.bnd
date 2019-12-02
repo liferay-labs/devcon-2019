@@ -1,4 +1,0 @@
-Bundle-Name: Liferay Players Context Contributor
-Bundle-SymbolicName: com.liferay.devcon.player.context.contributor
-Bundle-Version: 1.0.0
--dsannotations-options: inherit
